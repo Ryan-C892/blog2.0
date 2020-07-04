@@ -1,0 +1,204 @@
+html {
+    background: #E6E3D4;
+}
+body {
+  font-family: 100% Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 100% Georgia, "Times New Roman", Times, serif;
+  font-size: 1.1em;
+  font-weight: 0;
+  text-shadow: 0 1px 0 #333;
+  color: #333; 
+}
+h2 {
+   font-size: 1.5em;
+   color: #FFE8CB;
+   background: #916A31
+}
+h4 {
+  font-size: 1em;
+}
+
+/* Header */
+h2 {
+  padding: 20px;
+  font-size: 25px;
+  font-family: cursive, sans-serif;
+  text-align: center;
+  color: #FFE8CB;
+  background: #916A31;
+  margin: 0 auto;
+}
+
+/* Micro-clearfix */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+
+.cf {
+    zoom:1;
+}
+/* Horizontal Navigation Bar */
+nav {
+    background: #916A31;
+    height: 2.3em;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+ul {
+    background: #916A31;
+    height: 2em;
+    width: 100%;
+}
+li a {
+    display: block;
+    line-height: 2em;
+    padding: 0 1em;
+    color: #FFE8CB;
+    text-decoration: none;
+}
+li a:hover {
+    background: #FFE8CB;
+    color: #916A31;
+    height: 2em;
+    padding-top: .3em;
+    position: relative;
+    top: -.3em;
+    border-radius: .3em .3em 0 0;
+}
+.current, a:hover, .current {
+    background: #AD9B7F;
+    color: #eee;
+    padding-top: .3em;
+    position: relative;
+    top:-.3em;
+    border-radius: .3em .3em 0 0;
+    border-bottom: .3em solid #916A31;
+    cursor: default;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 65%;
+}
+
+/* Right column */
+.rightcolumn {
+  display: block;
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+/* Text boxes */
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    background-color: #917F63;
+}
+
+.flex-container .box {
+    background-color: #f1f1f1;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    line-height: 20px;
+}
+/* Fake image */
+.fakeimg {
+  color: #eee;
+  background-color: #917F63;
+  width: 91%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Page buttons */
+i {
+    border: solid black;
+    border-width: 0 3px;
+    display: inline-block;
+    padding 3px;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.pagination {
+    display: none;
+    padding-left: 0;
+    list-style: none;
+    border-radius:.25rem;
+}
+.page-link {
+    position: relative;
+    display: block;
+    padding:.5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    border: 1px solid #eee;
+}
+.page-link:hover {
+    z-index: 2;
+    text-decoration: none;
+}
+.page-link:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgb(0,123,225);
+}
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+.page-item:last-child .page-link {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+.page-item.active .page-link {
+    z-index: 3;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  background: #916A31;
+  margin-top: 20px;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
